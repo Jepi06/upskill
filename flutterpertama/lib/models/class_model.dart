@@ -12,7 +12,10 @@ class ClassModel {
     return ClassModel(
       id: json['id'],
       tingkat: json['tingkat'],
-      namaKelas: json['nama_kelas'],
+      namaKelas: json['namaKelas'],
     );
+  }
+  Map<String, dynamic> toJson() {
+    return {'id': id, 'tingkat': tingkat, 'namaKelas': namaKelas};
   }
 }
